@@ -201,7 +201,10 @@ namespace Библиотека
                 }
             }
             UsersListView.ItemsSource = SearchUsers;
-            UserBooksListView.ItemsSource = "";
+            if (UsersListView.SelectedItem==null)
+            {
+                UserBooksListView.ItemsSource = "";
+            }
             UserBooksListView.Items.Refresh();
             UsersListView.Items.Refresh();
         }
