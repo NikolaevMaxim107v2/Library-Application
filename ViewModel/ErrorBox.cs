@@ -25,5 +25,10 @@ namespace Библиотека.ViewModel
         {
             MessageBox.Show("Экземпляры данной книги закончились, выберете другую!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
+
+        public static void DataTypeError()
+        {
+            MessageBox.Show("Введён неверный тип входных данных!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+        }
     }
 }
